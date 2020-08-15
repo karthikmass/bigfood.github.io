@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Membership Registration - Big food network</title>
+	<!-- Mobile Specific Metas -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Font-->
+	<link rel="stylesheet" type="text/css" href="css/opensans-font.css">
+	<link rel="stylesheet" type="text/css" href="fonts/line-awesome/css/line-awesome.min.css">
+	<!-- Jquery -->
+	<link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+	<!-- Main Style Css -->
+    <link rel="stylesheet" href="css/style.css"/>
+    <!-- Main CSS-->
+    <link href="css/index_main.css" rel="stylesheet" media="all">
+	<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+	<script>
+</script> 
+</head>
+<body class="form-v4">
+
+<nav>
+<img class="header_logo_txt" src = "images/icons/BIGFOODNETWORK.IN.png">
+<a href="#"><img class = "icons_header" src = "images/icons/Facebook.png"></a>
+<a href="#"><img class = "icons_header " src = "images/icons/Twitter.png"></a>
+<a href="#"><img  class = "icons_header insta" src = "images/icons/Path 198.png"></a>
+</nav>
+
+	<div class="page-content">
+		<div class="form-v4-content">
+			<div class="form-left">
+				<div class="form-left-last">
+					<h2>Already Have an Account?</h2>
+					<h3>Please enter your phone number </h3>
+				<form class="form-detail" action="#" method="post" id="exts_form" style = "padding: 0px;">	
+				<div class="form-row">
+					<input type="text" name="your_phone" id="your_phone" class="input-text" required onkeypress="return onlyNumberKey(event)" >
+					<input type = "submit" value = "BOOK NOW" name="register" class="register" style = "background:#fff; color:red;">
+				</div>
+				</form>
+				</div>
+			</div>
+			<form class="form-detail" action="#" method="post" id="myform">
+				<h2>MEMBERSHIP REGISTER</h2>
+				<div class="form-group">
+					<div class="form-row">
+						<label for="your_name">Your Name</label>
+						<input type="text" name="your_name" id="your_name" class="input-text"  pattern="[a-zA-Z]*" oninvalid="setCustomValidity('Please enter on alphabets only. ')" required>
+					</div> 
+				</div>
+				<div class="form-row">
+					<label for="your_email">Your Email</label>
+					<input type="text" name="your_email" id="your_email" class="input-text" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}">
+				</div>
+				<div class="form-row">
+					<label for="your_phone">Whatsapp/phone number</label>
+					<input type="text" name="your_phone" id="your_phone" class="input-text" required onkeypress="return onlyNumberKey(event)" >
+				</div>
+				<div class="form-row">
+					<h4>Address</h4>
+				</div>
+				
+				<div class="form-group">
+					<div class="form-row form-row-1">
+						<label for="door">Door No / street</label>
+						<input type="text" name="door" id="door" class="input-text" required>
+					</div>
+					<div class="form-row form-row-1">
+						<label for="area">Area</label>
+						<input type="text" name="area" id="area" class="input-text" required>
+					</div>
+				</div>
+				
+				<div class="form-row">
+					<label for="your_address1">Address line 1</label>
+					<input type="text" name="your_address1" id="your_address1" class="input-text" required >
+				</div>
+				<div class="form-row">
+					<label for="your_address2">Address line 2</label>
+					<input type="text" name="your_address2" id="your_address2" class="input-text">
+				</div>
+				<div class="form-row">
+					<label for="your_address3">Address line 3</label>
+					<input type="text" name="your_address3" id="your_address3" class="input-text">
+				</div>
+				<div class="form-row">
+					<label for="order_before">Did you Order online before?</label><br>
+					<select  class="input-text" name = "order_before" id = "order_before">
+						<option class="input-text" value = "true">Yes</option>
+						<option class="input-text" value = "false">No</option>
+					</select>
+				</div>
+				<div class="form-row">
+					<label for="family_members">Select No of members in your family</label><br>
+					<select  class="input-text" name = "family_members" id = "family_members">
+						<option class="input-text" value = "one">one</option>
+						<option class="input-text" value = "two">two</option>
+						<option class="input-text" value = "three">three</option>
+						<option class="input-text" value = "four">four</option>
+						<option class="input-text" value = "five">five</option>
+						<option class="input-text"  value = "more than five">more than five</option>
+					</select>
+				</div>
+				
+				<div class="form-checkbox">
+					<label class="container"><p>I agree to the <a href="#" class="text">Terms and Conditions</a></p>
+					  	<input type="checkbox" name="checkbox">
+					  	<span class="checkmark"></span>
+					</label>
+				</div>
+				<div class="form-row-last">
+					<input type="submit" name="register" class="register" value="Register">
+				</div>
+			</form>
+		</div>
+	</div>
+	<script>
+	  
+	var offer_code = '';
+    $(document).ready(function () {  
+        offer_code = GetParameterValues('offercode'); 
+		if(offer_code = "undefined")
+			{
+				//window.location.href = 'https://bigfoodnetwork.in';
+			}
+				console.log(name);
+         
+    });  
+		// just for the demos, avoids form submit
+		jQuery.validator.setDefaults({
+		  	debug: true,
+		  	success:  function(label){
+        		label.attr('id', 'valid');
+   		 	},
+		});
+		$( "#myform" ).validate({
+		  	messages: {
+		  		your_name: {
+		  			required: "Please enter a name"
+		  		},
+		  		your_email: {
+		  			required: "Please provide an email"
+		  		},
+		  		your_phone: {
+		  			required: "Please provide an phone number"
+		  		},
+		  		door: {
+		  			required: "Please provide door no"
+		  		},
+		  		area: {
+		  			required: "Please provide an area"
+		  		},
+		  		your_address1: {
+		  			required: "Please provide the address"
+		  		}
+		  	},
+			
+		  submitHandler: function(form) {
+			// do other things for a valid form
+			offer_code = GetParameterValues('offercode'); 
+			var username = form.your_name.value;
+			var email = form.your_email.value;
+			var phone = form.your_phone.value;
+			var door = form.door.value;
+			var area = form.area.value;
+			var address1 = form.your_address1.value;
+			var address2 = form.your_address2.value;
+			var address3 = form.your_address3.value;
+			var order_before = form.order_before.value;
+			var family_members = form.family_members.value;
+			var address = address1+address2+address3
+			//console.log(address); 
+			var url = "http://localhost/bigfood/public/index.php/v1/api?act=add_member";
+			$.ajax({
+				type: "POST",
+				url: url,
+				dataType: "json",
+				data: window.btoa(JSON.stringify({
+					act:"add_member",
+					phone: phone,
+					name: username,
+					email: email,
+					address: address,
+					order_before: order_before,
+					family_members:family_members,
+					offer_code:offer_code,
+					mode:"website"
+				})),
+				success: function(response)
+				{
+					if(response.user_msg == "User Registered Sucess")
+					{
+						alert("Your order will be placed soon !!!");	
+						window.location.href = 'https://bigfoodnetwork.in';
+					}
+					else
+					{
+						$( "#myform" )[0].reset();
+						alert("error");
+					}
+				},
+				error: function(response) {
+					$( "#myform" )[0].reset();
+					alert("error");
+				}
+			});
+		  }
+		});
+		$( "#exts_form" ).validate({
+		  	messages: {
+		  		your_phone: {
+		  			required: "Please provide an phone number"
+		  		}
+		  	},
+			
+		  submitHandler: function(form) {
+			offer_code = GetParameterValues('offercode'); 
+			var phone = form.your_phone.value;
+			var url = "http://localhost/bigfood/public/index.php/v1/api?act=order_existing_customer";
+			$.ajax({
+				type: "POST",
+				url: url,
+				dataType: "json",
+				data: window.btoa(JSON.stringify({
+					offer_code: offer_code,
+					phone: phone
+				})),
+				success: function(response)
+				{
+				if(response.user_msg == "User not Exits")
+					{
+						alert("Your account was not found, Please Register !!!");
+						$( "#exts_form" )[0].reset();						
+					}
+					else{
+						
+						alert("Your order will be placed soon !!!");	
+						window.location.href = 'https://bigfoodnetwork.in';
+					}
+						
+				},
+				error: function(response) {
+					alert("error");
+				}
+			});
+		  }
+		});
+    function onlyNumberKey(evt) { 
+          
+        // Only ASCII charactar in that range allowed 
+        var ASCIICode = (evt.which) ? evt.which : evt.keyCode 
+        if (ASCIICode > 31 && (ASCIICode < 48 || ASCIICode > 57)) 
+            return false; 
+        return true; 
+    }
+	function GetParameterValues(param) {  
+            var url = window.location.href.slice(window.location.href.indexOf('?') + 1).split('&');  
+            for (var i = 0; i < url.length; i++) {  
+                var urlparam = url[i].split('=');  
+                if (urlparam[0] == param) {  
+                    return urlparam[1];  
+                }  
+            }  
+        } 
+	</script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>

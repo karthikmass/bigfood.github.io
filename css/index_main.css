@@ -1,0 +1,87 @@
+nav
+{
+	height:60px;
+	background:url('../images/icons/Nav bar 4.png');
+	padding-top: 6px;
+}
+.header_logo_txt
+{
+	display: inline;
+}
+nav .icons_header{
+	float: right;
+}
+.insta
+{
+	padding-right: 20px;
+}
+.contentimage
+{
+	width: 35%;
+    margin: auto;
+    display: block;
+}
+.button_txt
+{
+	background: #fe0000;
+    width: 25%;
+	margin: auto;
+	box-shadow: 0px 0px 13px 2px black;
+	cursor: pointer;
+}
+@media (max-width: 780px) {
+	.header_logo_txt
+	{
+		width: 230px;
+		margin: 10px;
+	}
+	.insta
+	{
+		width: 32px !important;
+	}
+	nav .icons_header
+	{
+		width: 50px;
+		height: 27px;
+		padding-top: 10px;
+	}
+}
+@media (max-width: 425px)
+{
+	.insta
+	{
+		width: 19px !important;
+	}
+	nav .icons_header
+	{
+		width: 25px;
+		height: 14px;
+		padding-top: 16px;
+	}
+	.contentimage
+	{
+		width: 100%;
+	}
+}
+@media (max-width:375px)
+{
+	nav
+	{
+		height:90px;
+	}
+	.header_logo_txt
+	{
+		display: block;
+	}
+}
+.form_container
+{
+	box-shadow: 0 0 5px 0px #fa0100;
+    margin: 35px;
+}
+.reg_box
+{
+	box-shadow: 0px 0px 3px 2px #fa0100;
+    margin: 15px;
+    height: 500px;
+}

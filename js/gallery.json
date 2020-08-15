@@ -1,0 +1,16 @@
+{
+   "gallery": [
+       {
+           "src": "images/gallery/img1.jpg"
+       },
+	   {
+           "src": "images/gallery/img1.jpg"
+       },
+	   {
+           "src": "images/gallery/img1.jpg"
+       },
+	   {
+           "src": "images/gallery/img1.jpg"
+       }
+   ]
+}

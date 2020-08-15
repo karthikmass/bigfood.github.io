@@ -1,0 +1,302 @@
+nav
+{
+	background:red;
+	padding-top: 6px;
+}
+.header_logo_txt
+{
+	display: inline;
+}
+footer .icons_header{
+	padding: 9px 0px 5px 15px;
+	width:40px;
+}
+.insta
+{
+	
+}
+.contentimage
+{
+	width: 35%;
+    margin: auto;
+    display: block;
+}
+
+a
+{
+	text-decoration:none;
+}
+.button_txt a
+{
+	color:white;
+	background: #fe0000;
+	cursor: pointer;
+	padding:10px;
+	border-radius:3px;
+}
+.footer_icons
+{
+	margin:auto;
+	width:12%;
+}
+.offer_rib
+{
+	display:inline-block;
+	float:right;
+}
+.offer_ribtxt
+{
+	display:inline-block;
+	color:white;
+}
+.offer_ribtxt a
+{
+	color:white;
+}
+.free_txt
+{
+	display:inline-block;
+	float:right;
+}
+@media (max-width: 1040px) {
+	.offer_ribtxt {
+		display: inline-block;
+		color: white;
+		font-size: 19px;
+	}	
+}
+@media (max-width: 780px) {
+	.header_logo_txt
+	{
+		width: 230px;
+		margin: 10px;
+	}
+	.insta
+	{
+		width: 32px !important;
+	}
+	
+	.footer_icons
+	{
+		margin:auto;
+		width:16%;
+	}
+	nav {
+    background: url(../images/icons/Nav bar 4.png);
+    padding-top: 6px;
+	}
+}
+@media (max-width: 425px)
+{
+	.insta
+	{
+		width: 19px !important;
+	}
+	.contentimage
+	{
+		width: 100%;
+	}
+		.footer_icons
+	{
+		margin:auto;
+		width:38%;
+	}
+	.offer_ribtxt {
+    font-size: 15px;
+	}
+}
+@media (max-width:375px)
+{
+	.header_logo_txt
+	{
+		display: block;
+	}
+	.footer_icons
+	{
+		margin:auto;
+		width:38%;
+	}
+	
+	.offer_ribtxt {
+    font-size: 15px;
+	text-align:center;	
+	margin-top: 0px;
+	}
+	.offer_rib img {
+		margin: 0px 0px 0px 125px;	
+	}
+}
+.form_container
+{
+	box-shadow: 0 0 5px 0px #fa0100;
+    margin: 35px;
+}
+.reg_box
+{
+	box-shadow: 0px 0px 3px 2px #fa0100;
+    margin: 15px;
+    height: 500px;
+}
+
+.footer_aggretxt
+{
+	color:white;
+	padding:5px;
+	text-align:center;
+}
+.footer_aggretxt a
+{
+    color: white;
+    text-decoration: none;
+}
+	
+.footer_copyrightstxt
+{
+	color:white;
+	padding:5px;
+	text-align:center;
+}
+.offer_c
+{
+	height:400px;
+	width:395px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin:auto;
+}
+.offer_div
+{
+	width:50%;
+	margin:auto;
+}
+@media screen and (max-width: 425px) {
+	
+	.offer_div
+	{
+		width:100%;
+		margin:auto;
+	}
+}
+
+@media screen and (max-width: 375px) {
+  .offer_c
+	{
+		height:400px;
+		width:100%;
+		background-size:cover;
+		background-repeat:no-repeat;
+		margin:auto;
+	}
+}
+.mySlides {display: none}
+img {vertical-align: middle;}
+.offer_rib img {
+    vertical-align: sub;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev, .next {
+  background-color: #fe0000;;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+  width:50%;
+  margin:auto;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+.mySlides img{
+width:100%;
+}
+.footer
+{
+margin-top: 80px;
+    background: red;
+}
+p {
+    margin: 0 0 10px;
+    /* justify-content: center; */
+    text-align: justify;
+}

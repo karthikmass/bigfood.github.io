@@ -1,0 +1,25 @@
+{
+   "clienetele": [
+       {
+           "thumb": "images/gallery/clients/client4.jpg"
+       },
+	   {
+           "thumb": "images/gallery/clients/client5.jpg"
+       },
+	   {
+           "thumb": "images/gallery/clients/client6.jpg"
+       },
+	   {
+           "thumb": "images/gallery/clients/client7.jpg"
+       },
+	   {
+           "thumb": "images/gallery/clients/client8.jpg"
+       },
+	   {
+           "thumb": "images/gallery/clients/client9.jpg"
+       },
+	   {
+           "thumb": "images/gallery/clients/client10.jpg"
+       }
+   ]
+}

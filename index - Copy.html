@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>Big Food Network - Building India's Biggest consumer Network Chain</title>
+
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/index_main_v1.css" rel="stylesheet" media="all">
+	
+<script src="js/jquery.min.js"></script>
+	<script>
+var banner_images ={
+   "offers": [
+       {
+           "image": "images/offers/offers1.jpg"
+       },
+	   {
+           "image": "images/offers/offers2.jpg"
+       },
+	   {
+           "image": "images/offers/offers3.jpg"
+       },
+	   {
+           "image": "images/offers/offers4.jpg"
+       },
+	   {
+           "image": "images/offers/offers5.jpg"
+       },
+	   {
+           "image": "images/offers/offers6.jpg"
+       },
+	   {
+           "image": "images/offers/offers7.jpg"
+       }
+   ]
+};
+	//console.log(banner_images);
+		var jsonObject= JSON.stringify(banner_images.offers); var count = JSON.parse(jsonObject).length;
+	
+
+var i=0;
+//dynamic_banner();
+$.each(banner_images.offers, function (i,j) 
+{
+var atter = "<img src = '"+j.image+"' />"
+//console.log(atter);
+$('.offer_image').prepend(atter);
+
+});
+//setInterval(dynamic_banner, 5000);
+function dynamic_banner()
+{
+	//console.log(i);
+	//console.log(banner_images.offers[i]['images']);
+	var img = (banner_images.offers[i]['image']);
+	//$('.offer_image').attr('style','background-image:url('+img+')')
+	//var atter = "<img src = '"+img+"' />"
+	//debugger;
+	$('.offer_image').attr('style','background-image:url('+img+');');
+	//$('.offer_image').append(atter);
+	if(i>=count-1)
+	{
+		i=0;
+	}
+	else
+	{
+		i=i+1;
+	}
+}
+	</script>
+</head>
+
+<body>
+
+<nav>
+<img class="header_logo_txt" src = "images/icons/BIGFOODNETWORK.IN.png">
+<div class = "offer_rib"><img src = "images/icons/Delivery.png">&nbsp;&nbsp;&nbsp;<h2 class = "offer_ribtxt">Free Delivery Order Now <a href = "">7338738666</a>/<a href = "">7338748666</a></h2> </div>
+</nav>
+<!--<div>
+    <img class="contentimage offer_image" src="images/icons/image 1.png">
+    
+</div>-->
+<div class = "container">
+	<div class=" offer_c offer_image" style="/*background-image:url(images/offers/offers1.jpg);*/">
+		 <img class="contentimage offer_image" src="images/icons/image 1.png">
+	</div>
+</div>
+<div style = "margin-top:20px;">
+<a href="http://localhost/bigf/Register.html"><div class="button_txt" >
+    <img class="contentimage" src="images/icons/CLICK HERE.png">
+</div></a>
+
+<nav style = "margin-top:80px;">
+	<div class = "footer_icons">
+		<a href="https://www.facebook.com/Big-Food-Network-111310767320080/"><img class = "icons_header" src = "images/icons/Facebook.png"></a>
+		<a href="#"><img class = "icons_header " src = "images/icons/Twitter.png"></a>
+		<a href="#"><img  class = "icons_header" src = "images/icons/Path 198.png"></a>
+	</div>
+</nav>
+</body>
+<style>
+
+.offer_c
+{
+	height:400px;
+	width:395px;
+	background-size:cover;
+	background-repeat:no-repeat;
+	margin:auto;
+}
+@media screen and (max-width: 375px) {
+  .offer_c
+	{
+		height:400px;
+		width:100%;
+		background-size:cover;
+		background-repeat:no-repeat;
+		margin:auto;
+	}
+}
+</style>
+</html>
+<!-- end document https://bigfoodnetwork.in/Register.html?offercode=test-->
